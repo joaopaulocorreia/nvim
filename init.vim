@@ -2,7 +2,7 @@ call plug#begin()
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 Plug 'valloric/youcompleteme'
-Plug 'rakr/vim-one'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'preservim/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
@@ -21,5 +21,6 @@ set relativenumber
 set inccommand=split 
 set background=light
 
-let g:airline_theme='one'
-colorscheme one
+colorscheme PaperColor
+
+
