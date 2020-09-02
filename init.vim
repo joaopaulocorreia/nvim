@@ -10,6 +10,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 syntax on
@@ -21,6 +22,6 @@ set relativenumber
 set inccommand=split 
 set background=light
 
-colorscheme PaperColor
+colorscheme gruvbox
 
 
