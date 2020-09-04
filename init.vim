@@ -11,6 +11,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 syntax on
@@ -22,6 +23,6 @@ set relativenumber
 set inccommand=split 
 set background=light
 
-colorscheme PaperColor
+colorscheme gruvbox
 
 
