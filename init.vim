@@ -1,4 +1,6 @@
 call plug#begin()
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 Plug 'valloric/youcompleteme'
@@ -21,8 +23,8 @@ set number
 set mouse=a
 set relativenumber
 set inccommand=split 
-set background=light
+set background=dark
 
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_contrast_light='hard'
 colorscheme gruvbox
-
-
