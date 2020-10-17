@@ -3,7 +3,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
-Plug 'valloric/youcompleteme'
+	Plug 'valloric/youcompleteme'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'preservim/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
@@ -43,8 +43,10 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
-let g:gruvbox_contrast_dark='hard'
-let g:gruvbox_contrast_light='hard'
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_light = 'hard'
+
+let g:AirlineTheme = 'minimalist'
 
 nnoremap <c-t> :NERDTreeToggle<cr>
 nnoremap <c-p> :Files<cr>
