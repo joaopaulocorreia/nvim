@@ -11,12 +11,16 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-"Plug 'mattn/emmet-vim'
-"Plug 'morhetz/gruvbox'
+Plug 'mattn/emmet-vim'
+Plug 'morhetz/gruvbox'
 Plug 'SirVer/ultisnips'
 Plug 'ervandew/supertab'
+Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
+colorscheme gruvbox
 syntax on
 filetype plugin indent on
 
@@ -26,8 +30,6 @@ set mouse=a
 set relativenumber
 set inccommand=split
 set background=dark
-
-colorscheme PaperColor
 
 let mapleader = "\<space>"
 let g:UltiSnipsEditSplit = 'vertical'
@@ -41,6 +43,12 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_contrast_light='hard'
+
 nnoremap <c-t> :NERDTreeToggle<cr>
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
+
+autocmd Filetype css setlocal tabstop=2
+autocmd Filetype js setlocal tabstop=2
