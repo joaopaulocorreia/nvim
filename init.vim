@@ -28,3 +28,6 @@ set background=dark
 let g:gruvbox_contrast_dark='hard'
 let g:gruvbox_contrast_light='hard'
 colorscheme gruvbox
+
+autocmd Filetype css setlocal tabstop=2
+autocmd Filetype js setlocal tabstop=2
