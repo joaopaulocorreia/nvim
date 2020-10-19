@@ -3,7 +3,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
-	Plug 'valloric/youcompleteme'
+Plug 'valloric/youcompleteme'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'preservim/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
@@ -29,7 +29,7 @@ set number
 set mouse=a
 set relativenumber
 set inccommand=split
-set background=dark
+set background=light
 
 let mapleader = "\<space>"
 let g:UltiSnipsEditSplit = 'vertical'
@@ -44,7 +44,7 @@ let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_contrast_light = 'hard'
+let g:gruvbox_contrast_light = 'light'
 
 let g:AirlineTheme = 'minimalist'
 
@@ -52,5 +52,6 @@ nnoremap <c-t> :NERDTreeToggle<cr>
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
 
+autocmd Filetype scss setlocal tabstop=2
 autocmd Filetype css setlocal tabstop=2
 autocmd Filetype js setlocal tabstop=2
