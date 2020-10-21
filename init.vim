@@ -5,6 +5,7 @@ Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 Plug 'valloric/youcompleteme'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
@@ -12,15 +13,15 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
-Plug 'morhetz/gruvbox'
 Plug 'SirVer/ultisnips'
 Plug 'ervandew/supertab'
-Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
-Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'christoomey/vim-system-copy' 
 call plug#end()
 
-colorscheme gruvbox
+colorscheme PaperColor
 syntax on
 filetype plugin indent on
 
