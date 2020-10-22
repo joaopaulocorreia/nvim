@@ -18,6 +18,7 @@ Plug 'ervandew/supertab'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'morhetz/gruvbox'
+Plug 'posva/vim-vue'
 call plug#end()
 
 colorscheme gruvbox
