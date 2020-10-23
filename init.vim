@@ -33,7 +33,6 @@ set relativenumber
 set inccommand=split
 set background=light
 
-let mapleader = "\<space>"
 let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
 
@@ -50,9 +49,14 @@ let g:gruvbox_contrast_light = 'light'
 
 let g:AirlineTheme = 'minimalist'
 
-nnoremap <c-t> :NERDTreeToggle<cr>
-nnoremap <c-p> :Files<cr>
-nnoremap <c-f> :Ag<space>
+let mapleader = "\<space>"
+nnoremap <leader>wh :wincmd<space>h<cr>
+nnoremap <leader>wl :wincmd<space>l<cr>
+nnoremap <leader>wq :wincmd<space>q<cr>
+nnoremap <leader>p :Files<cr>
+nnoremap <leader>f :Ag<space>
+nnoremap <leader>nt :NERDTreeToggle<cr>
+nnoremap <leader>t :ter<cr>
 
 autocmd Filetype scss setlocal tabstop=2
 autocmd Filetype css setlocal tabstop=2
