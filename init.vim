@@ -2,24 +2,24 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-rails'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'sheerun/vim-polyglot'
 Plug 'vim-ruby/vim-ruby'
+Plug 'posva/vim-vue'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'pangloss/vim-javascript'
+Plug 'christoomey/vim-system-copy' 
 Plug 'valloric/youcompleteme'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
 Plug 'ervandew/supertab'
-Plug 'pangloss/vim-javascript'
-Plug 'posva/vim-vue'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-Plug 'christoomey/vim-system-copy' 
 call plug#end()
 
 colorscheme PaperColor
@@ -48,6 +48,7 @@ let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_contrast_light = 'light'
 
 let g:AirlineTheme = 'minimalist'
+let NERDTreeShowHidden=1
 
 let mapleader = "\<space>"
 nnoremap <leader>wh :wincmd<space>h<cr>
