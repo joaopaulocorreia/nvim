@@ -41,11 +41,11 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:javascript_plugin_jsdoc = 1
 
 let mapleader = "\<space>"
-nnoremap <leader>wh :wincmd<space>h<cr>
-nnoremap <leader>wl :wincmd<space>l<cr>
-nnoremap <leader>wq :wincmd<space>q<cr>
-nnoremap <leader>wj :wincmd<space>j<cr>
-nnoremap <leader>wk :wincmd<space>k<cr>
+nnoremap <leader>h :wincmd<space>h<cr>
+nnoremap <leader>l :wincmd<space>l<cr>
+nnoremap <leader>q :wincmd<space>q<cr>
+nnoremap <leader>j :wincmd<space>j<cr>
+nnoremap <leader>k :wincmd<space>k<cr>
 nnoremap <leader>p :Files<cr>
 nnoremap <leader>f :Ag<space>
 nnoremap <leader>nt :NERDTreeToggle<cr>
