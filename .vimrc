@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'fatih/vim-go', { 'tag': '*' }
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 
@@ -14,13 +13,13 @@ Plug 'tpope/vim-commentary'           "https://github.com/tpope/vim-commentary
 Plug 'pangloss/vim-javascript'        "https://github.com/pangloss/vim-javascript
 Plug 'christoomey/vim-system-copy'    "https://github.com/christoomey/vim-system-copy
 Plug 'preservim/nerdtree'             "https://github.com/preservim/nerdtree
-Plug 'Xuyuanp/nerdtree-git-plugin'    "https://github.com/Xuyuanp/nerdtree-git-plugin
-Plug 'ryanoasis/vim-devicons'         "https://github.com/ryanoasis/vim-devicons
+Plug 'xuyuanp/nerdtree-git-plugin'    "https://github.com/Xuyuanp/nerdtree-git-plugin
+Plug 'tpope/vim-fugitive'             "https://github.com/tpope/vim-fugitive  
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
-Plug 'SirVer/ultisnips'
+Plug 'sirver/ultisnips'
 call plug#end()
 
 colorscheme one
@@ -31,16 +30,11 @@ set hidden
 set number
 set mouse=a
 set relativenumber
-set background=dark
-set encoding=UTF-8
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:javascript_plugin_jsdoc = 1
+set background=light
 
 let mapleader = "\<space>"
+let g:javascript_plugin_jsdoc = 1
+
 nnoremap <leader>h :wincmd<space>h<cr>
 nnoremap <leader>l :wincmd<space>l<cr>
 nnoremap <leader>q :wincmd<space>q<cr>
@@ -50,6 +44,8 @@ nnoremap <leader>p :Files<cr>
 nnoremap <leader>f :Ag<space>
 nnoremap <leader>nt :NERDTreeToggle<cr>
 nnoremap <leader>ter :ter<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>w :w<cr>
 
 autocmd Filetype scss setlocal tabstop=2
 autocmd Filetype css setlocal tabstop=2
