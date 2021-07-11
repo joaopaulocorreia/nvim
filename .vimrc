@@ -2,25 +2,32 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 
-Plug 'NLKNguyen/papercolor-theme'     "https://github.com/NLKNguyen/papercolor-theme
-Plug 'vim-airline/vim-airline'        "https://github.com/vim-airline/vim-airline
-Plug 'vim-airline/vim-airline-themes' "https://github.com/vim-airline/vim-airline-themes
+Plug 'fatih/vim-go'                   "https://github.com/fatih/vim-go
 
-Plug 'mg979/vim-visual-multi'         "https://github.com/mg979/vim-visual-multi
-Plug 'sheerun/vim-polyglot'           "https://github.com/sheerun/vim-polyglot
-Plug 'tpope/vim-surround'             "https://github.com/tpope/vim-surround
-Plug 'tpope/vim-commentary'           "https://github.com/tpope/vim-commentary
-Plug 'pangloss/vim-javascript'        "https://github.com/pangloss/vim-javascript
-Plug 'christoomey/vim-system-copy'    "https://github.com/christoomey/vim-system-copy
-Plug 'preservim/nerdtree'             "https://github.com/preservim/nerdtree
-Plug 'xuyuanp/nerdtree-git-plugin'    "https://github.com/Xuyuanp/nerdtree-git-plugin
-Plug 'tpope/vim-fugitive'             "https://github.com/tpope/vim-fugitive  
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } "https://github.com/iamcco/markdown-preview.nvim
+Plug 'NLKNguyen/papercolor-theme'     "https://github.com/NLKNguyen/papercolor-theme
+Plug 'vim-airline/vim-airline'        " https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline-themes' " https://github.com/vim-airline/vim-airline-themes
+
+Plug 'mg979/vim-visual-multi'         " https://github.com/mg979/vim-visual-multi
+Plug 'sheerun/vim-polyglot'           " https://github.com/sheerun/vim-polyglot
+Plug 'tpope/vim-surround'             " https://github.com/tpope/vim-surround
+Plug 'tpope/vim-commentary'           " https://github.com/tpope/vim-commentary
+Plug 'pangloss/vim-javascript'        " https://github.com/pangloss/vim-javascript
+Plug 'christoomey/vim-system-copy'    " https://github.com/christoomey/vim-system-copy
+Plug 'preservim/nerdtree'             " https://github.com/preservim/nerdtree
+Plug 'xuyuanp/nerdtree-git-plugin'    " https://github.com/Xuyuanp/nerdtree-git-plugin
+Plug 'tpope/vim-fugitive'             " https://github.com/tpope/vim-fugitive  
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " https://github.com/iamcco/markdown-preview.nvim
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 call plug#end()
+
+let g:PaperColor_Theme_Options = { 'theme': { 'default': { 'transparent_background': 1 } } }
+let g:lightline = { 'colorscheme': 'PaperColor' }
+let g:airline_theme='papercolor'
+let g:airline_powerline_fonts = 1
 
 set t_Co=256
 colorscheme PaperColor
@@ -31,9 +38,12 @@ set hidden
 set number
 set mouse=a
 set relativenumber
-set background=dark
+set laststatus=2
+set background=light
 set colorcolumn=180
 set inccommand=split
+
+au filetype go inoremap <buffer> . .<C-x><C-o>
 
 let mapleader = "\<space>"
 
